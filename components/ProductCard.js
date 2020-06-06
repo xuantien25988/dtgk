@@ -11,7 +11,7 @@ import style from './scss/ProductCard.module.scss';
 const useStyles = makeStyles(() => ({
 	paper : {
 		height : 380,
-		width  : 190
+		width  : 195
 	}
 }));
 

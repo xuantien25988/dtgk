@@ -1,19 +1,18 @@
 $backgroundColor: #ffc534;
 
-.saleContainer {
+.sale_container {
 	font-family: sans-serif;
 	border: none;
 	background-color: $backgroundColor;
 
 	text-align: center;
-	padding: 10px;
 	.banner {
 		img {
 			width: 100%;
 		}
 	}
 
-	.countDown {
+	.count_down {
 		padding: 20px;
 		.title {
 			color: #ff4800;
@@ -34,13 +33,28 @@ $backgroundColor: #ffc534;
 		}
 	}
 
-	.productList {
-		padding: 0 30px;
-		.layoutBanner {
-			padding: 20px;
+	.product_list {
+		width: 85%;
+		margin: 0 auto;
+		margin-bottom: 8px;
+		.layout_banner {
+			margin: 20px 0px;
 			img {
 				width: 60%;
 			}
+		}
+	}
+
+	.metadata {
+		width: 85%;
+		background: #fff;
+		border-radius: 5px;
+
+		margin: 0 auto;
+
+		.content {
+			padding: 10px;
+			text-align: left;
 		}
 	}
 }
