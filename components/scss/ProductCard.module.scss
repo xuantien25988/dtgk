@@ -2,7 +2,7 @@ $gradient-background: linear-gradient(180deg, #f7b500, #fa6400);
 .wrapper {
 	padding: 10px 5px;
 	.container {
-		.saleTag {
+		.sale_tag {
 			display: flex;
 			color: #fff;
 			align-items: center;
@@ -15,7 +15,7 @@ $gradient-background: linear-gradient(180deg, #f7b500, #fa6400);
 				width: 23px;
 				top: -1px;
 			}
-			.salePrice {
+			.sale_price {
 				background-image: $gradient-background;
 
 				padding: 1px 10px 1px 25px;
@@ -27,7 +27,7 @@ $gradient-background: linear-gradient(180deg, #f7b500, #fa6400);
 			}
 		}
 
-		.productPhoto {
+		.product_photo {
 			img {
 				text-align: center;
 				position: relative;
@@ -35,8 +35,8 @@ $gradient-background: linear-gradient(180deg, #f7b500, #fa6400);
 				max-height: 180px;
 			}
 		}
-		.productDetail {
-			.productName {
+		.product_detail {
+			.product_name {
 				height: 15%;
 				margin: 7px 0;
 				font-size: 12px;
@@ -54,7 +54,7 @@ $gradient-background: linear-gradient(180deg, #f7b500, #fa6400);
 				text-overflow: ellipsis;
 				white-space: pre-line;
 			}
-			.productPrice {
+			.product_price {
 				text-align: left;
 				letter-spacing: -.4px;
 				line-height: 16px;
@@ -71,7 +71,7 @@ $gradient-background: linear-gradient(180deg, #f7b500, #fa6400);
 				}
 			}
 		}
-		.btnDatmua {
+		.button_datmua {
 			.alert {
 				opacity: 0;
 				font-size: 10px;
@@ -95,7 +95,7 @@ $gradient-background: linear-gradient(180deg, #f7b500, #fa6400);
 				width: 100%;
 			}
 		}
-		.viewCount {
+		.view_count {
 			padding: 10px 0;
 			text-align: left;
 			font-size: 10px;

@@ -9,7 +9,7 @@ $backgroundColor: #fdd600;
 	width: 100%;
 	background-color: $backgroundColor;
 
-	.headerContainer {
+	.header_container {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -22,7 +22,7 @@ $backgroundColor: #fdd600;
 		}
 	}
 
-	.headerSearch {
+	.header_search {
 		background: white;
 		display: flex;
 		width: 40%;
@@ -32,14 +32,14 @@ $backgroundColor: #fdd600;
 		padding: 0 5px;
 		border-radius: 4px;
 
-		.searchButton {
+		.button_search {
 			font-size: 16px;
 			border: none;
 			cursor: pointer;
 			background: none;
 		}
 
-		.inputField {
+		.input_field {
 			width: 100%;
 			float: right;
 			padding: 6px;
@@ -48,7 +48,7 @@ $backgroundColor: #fdd600;
 		}
 	}
 
-	.headerHotline {
+	.header_hotline {
 		margin: 0 10px;
 		background-color: #9d060e;
 		width: auto;
@@ -59,23 +59,23 @@ $backgroundColor: #fdd600;
 		color: #fff;
 	}
 
-	.headerCart {
+	.header_cart {
 		margin: 0 10px;
 		background-color: $backgroundColor;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 
-		.cart {
-			text-align: center;
-		}
-
-		.cartButton {
+		.button_cart {
 			font-size: 25px;
 			float: left;
 			background-color: $backgroundColor;
 			cursor: pointer;
 			border: none;
+		}
+
+		.cart {
+			text-align: center;
 		}
 	}
 }

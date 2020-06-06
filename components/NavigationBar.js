@@ -5,7 +5,7 @@ import style from './scss/NavigationBar.module.scss';
 
 const NavigationBar = ({ categories }) => {
 	return (
-		<div className={style.navigationBar}>
+		<div className={style.navigation_bar}>
 			<DropdownList categories={categories} />
 		</div>
 	);

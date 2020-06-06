@@ -31,30 +31,30 @@ const ProductCard = ({ product }) => {
 		<Paper className={classes.paper}>
 			<div className={style.wrapper}>
 				<div className={style.container}>
-					<div className={style.saleTag}>
+					<div className={style.sale_tag}>
 						<img src="https://dienthoaigiakho.vn/935b9534bc5c2edd55745cdf854632cf.png" />
-						<div className={style.salePrice}>giảm {caculatePrice()}đ</div>
+						<div className={style.sale_price}>giảm {caculatePrice()}đ</div>
 					</div>
 
-					<div className={style.productPhoto}>
+					<div className={style.product_photo}>
 						<img src={product.productPhoto} />
 					</div>
 
-					<div className={style.productDetail}>
-						<div className={style.productName}>{product.name}</div>
-						<div className={style.productPrice}>
+					<div className={style.product_detail}>
+						<div className={style.product_name}>{product.name}</div>
+						<div className={style.product_price}>
 							<b>{getPrice(product.retailPrice)}đ</b>
 							<span>{getPrice(product.price)}đ</span>
 						</div>
 					</div>
 					<div />
 
-					<div className={style.btnDatmua}>
+					<div className={style.button_datmua}>
 						{renderedAlert()}
 						<Button>Đặt Mua</Button>
 					</div>
 
-					<div className={style.viewCount}>
+					<div className={style.view_count}>
 						<b>{product.viewCount}</b> lượt khách đã xem
 					</div>
 				</div>

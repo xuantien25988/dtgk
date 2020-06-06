@@ -29,76 +29,76 @@ const NavigationTab = ({ categories }) => {
 	// return <div className="photo-grid">{images}</div>;
 
 	return (
-		<div className={style.navigationContainer}>
+		<div className={style.navigation_container}>
 			<div className={style.dropdown}>
-				<a className={style.navigationTab}>
+				<a className={style.navigation_tab}>
 					<img className={style.dienthoai} />
 					<div>ĐIỆN THOẠI</div>
 				</a>
-				<div className={style.dropdownContent}>
+				<div className={style.dropdown_content}>
 					{renderedDropdownList('dien-thoai')}
 				</div>
 			</div>
 
 			<div className={style.dropdown}>
-				<a className={style.navigationTab}>
+				<a className={style.navigation_tab}>
 					<img className={style.dongho} />
 					<div>ĐỒNG HỒ</div>
 				</a>
-				<div className={style.dropdownContent}>
+				<div className={style.dropdown_content}>
 					{renderedDropdownList('dong-ho')}
 				</div>
 			</div>
 
 			<div className={style.dropdown}>
-				<a className={style.navigationTab}>
+				<a className={style.navigation_tab}>
 					<img className={style.ipad} />
 					<div>APPLE IPAD</div>
 				</a>
-				<div className={style.dropdownContent}>
+				<div className={style.dropdown_content}>
 					{renderedDropdownList('may-tinh-bang')}
 				</div>
 			</div>
 
 			<div className={style.dropdown}>
-				<a className={style.navigationTab}>
+				<a className={style.navigation_tab}>
 					<img className={style.macbook} />
 					<div>MACBOOK</div>
 				</a>
-				<div className={style.dropdownContent}>
+				<div className={style.dropdown_content}>
 					{renderedDropdownList('laptop')}
 				</div>
 			</div>
 
 			<div className={style.dropdown}>
-				<a className={style.navigationTab}>
+				<a className={style.navigation_tab}>
 					<img className={style.phukien} />
 					<div>PHỤ KIỆN</div>
 				</a>
-				<div className={style.dropdownContent}>
+				<div className={style.dropdown_content}>
 					{renderedDropdownList('phu-kien')}
 				</div>
 			</div>
 
 			<div className={style.dropdown}>
-				<a className={style.navigationTab}>
+				<a className={style.navigation_tab}>
 					<img className={style.dienthoaire} />
 					<div>CŨ GIÁ RẺ</div>
 				</a>
-				<div className={style.dropdownContent}>
+				<div className={style.dropdown_content}>
 					{renderedDropdownList('dien-thoai-re')}
 				</div>
 			</div>
 
 			<div className={style.dropdown}>
-				<a className={style.navigationTab}>
+				<a className={style.navigation_tab}>
 					<img className={style.tragop} />
 					<div>TRẢ GÓP</div>
 				</a>
 			</div>
 
 			<div className={style.dropdown}>
-				<a className={style.navigationTab}>
+				<a className={style.navigation_tab}>
 					<img className={style.khuyenmai} />
 					<div>TIN KHUYẾN MÃI</div>
 				</a>
