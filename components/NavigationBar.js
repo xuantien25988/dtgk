@@ -1,5 +1,5 @@
 import React from 'react';
-import DropdownList from './DropdownList';
+import DropdownList from './NavigationBar_DropdownList';
 
 import style from './scss/NavigationBar.module.scss';
 

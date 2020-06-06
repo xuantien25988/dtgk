@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './scss/DropdownList.module.scss';
+import style from './scss/NavigationBar_DropdownList.module.scss';
 
 const NavigationTab = ({ categories }) => {
 	const renderedDropdownList = (tag) => {

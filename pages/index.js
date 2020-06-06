@@ -1,4 +1,4 @@
-import Layout from '../layouts/Main.js';
+import PromotionPage from '../layouts/PromotionPage.js';
 import FetchData from '../api/dienthoaigiakhoAPI';
 import React from 'react';
 
@@ -15,7 +15,7 @@ class Index extends React.Component {
 	render() {
 		return (
 			<div className="App">
-				<Layout />
+				<PromotionPage />
 			</div>
 		);
 	}

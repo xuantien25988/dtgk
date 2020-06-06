@@ -6,7 +6,7 @@ import Sale from '../components/Sale.js';
 
 import FetchData from '../api/dienthoaigiakhoAPI';
 
-class Main extends React.Component {
+class PromotionPage extends React.Component {
 	constructor() {
 		super();
 		this.state = { categories: [], layouts: [], metadata: [], footer: [] };
@@ -58,4 +58,4 @@ class Main extends React.Component {
 	}
 }
 
-export default Main;
+export default PromotionPage;
