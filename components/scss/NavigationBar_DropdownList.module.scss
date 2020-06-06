@@ -1,6 +1,8 @@
-$backgroundColor: #fdd600;
-$color-black: #050505;
-$color-grey: #575555;
+$yellow: #fdd600;
+$white: #fff;
+$red: #9d060e;
+$black: #050505;
+$grey: #575555;
 
 .navigation_container {
 	height: 100%;
@@ -32,7 +34,7 @@ $color-grey: #575555;
 			}
 
 			&:hover {
-				color: $backgroundColor;
+				color: $yellow;
 				cursor: pointer;
 
 				.dienthoai {
@@ -125,12 +127,12 @@ $color-grey: #575555;
 		.dropdown_content {
 			display: none;
 			position: absolute;
-			background-color: #fff;
+			background-color: $white;
 
 			min-width: 160px;
 
 			padding: 10px 20px;
-			border: 1px solid $color-black;
+			border: 1px solid $black;
 			border-top-width: 0;
 			border-bottom-left-radius: 2px;
 			border-bottom-right-radius: 2px;
@@ -145,13 +147,13 @@ $color-grey: #575555;
 				white-space: nowrap;
 				font-size: 14px;
 				font-weight: bold;
-				color: $color-grey;
+				color: $grey;
 				cursor: pointer;
 				padding: 2px;
 				margin: 0px;
 				display: block;
 				&:hover {
-					color: $color-black;
+					color: $black;
 				}
 			}
 

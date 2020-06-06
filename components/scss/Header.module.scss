@@ -1,13 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(http://fonts.googleapis.com/css?family=Roboto);
-
-$backgroundColor: #fdd600;
+$yellow: #fdd600;
+$white: #fff;
+$red: #9d060e;
 
 .header {
-	font-family: Roboto, sans-serif;
+	font-family: sans-serif;
 	border: none;
 	width: 100%;
-	background-color: $backgroundColor;
+	background-color: $yellow;
 
 	.header_container {
 		display: flex;
@@ -23,7 +22,7 @@ $backgroundColor: #fdd600;
 	}
 
 	.header_search {
-		background: white;
+		background: $white;
 		display: flex;
 		width: 40%;
 		margin-left: 10px;
@@ -50,18 +49,18 @@ $backgroundColor: #fdd600;
 
 	.header_hotline {
 		margin: 0 10px;
-		background-color: #9d060e;
+		background-color: $red;
 		width: auto;
 		border-radius: 4px;
 		padding: 10px;
 
 		font-size: 16px;
-		color: #fff;
+		color: $white;
 	}
 
 	.header_cart {
 		margin: 0 10px;
-		background-color: $backgroundColor;
+		background-color: $yellow;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -69,7 +68,7 @@ $backgroundColor: #fdd600;
 		.button_cart {
 			font-size: 25px;
 			float: left;
-			background-color: $backgroundColor;
+			background-color: $yellow;
 			cursor: pointer;
 			border: none;
 		}
