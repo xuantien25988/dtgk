@@ -1,0 +1,166 @@
+$backgroundColor: #fdd600;
+$color-black: #050505;
+$color-grey: #575555;
+
+.navigationContainer {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	.dropdown {
+		position: relative;
+		display: inline-block;
+		&:hover {
+			.dropdownContent {
+				position: absolute;
+				display: block;
+			}
+		}
+
+		.navigationTab {
+			width: 150px;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			img {
+				height: 20px;
+				padding-right: 10px;
+			}
+
+			&:hover {
+				color: $backgroundColor;
+				cursor: pointer;
+
+				.dienthoai {
+					content: url(https://i.imgur.com/GqMMEuS.png);
+				}
+
+				.dongho {
+					content: url(https://i.imgur.com/YYZxMxX.png);
+				}
+
+				.ipad {
+					content: url(https://i.imgur.com/uj2hxwa.png);
+				}
+
+				.macbook {
+					content: url(https://i.imgur.com/19gXunt.png);
+				}
+
+				.phukien {
+					content: url(https://i.imgur.com/NM78yyy.png);
+				}
+
+				.dienthoaire {
+					content: url(https://i.imgur.com/d5w1Dtz.png);
+				}
+
+				.tragop {
+					content: url(https://i.imgur.com/eet1XS0.png);
+				}
+
+				.khuyenmai {
+					content: url(https://i.imgur.com/vnrGVsh.png);
+				}
+			}
+
+			.dienthoai {
+				content: url(https://i.imgur.com/dJcko67.png);
+			}
+
+			.dongho {
+				content: url(https://i.imgur.com/y3r6u7R.png);
+				&:hover {
+					content: url(https://i.imgur.com/YYZxMxX.png);
+				}
+			}
+
+			.ipad {
+				content: url(https://i.imgur.com/2rjgnJl.png);
+				&:hover {
+					content: url(https://i.imgur.com/uj2hxwa.png);
+				}
+			}
+
+			.macbook {
+				content: url(https://i.imgur.com/r8N6JQs.png);
+				&:hover {
+					content: url(https://i.imgur.com/19gXunt.png);
+				}
+			}
+
+			.phukien {
+				content: url(https://i.imgur.com/OyxujeR.png);
+				&:hover {
+					content: url(https://i.imgur.com/NM78yyy.png);
+				}
+			}
+
+			.dienthoaire {
+				content: url(https://i.imgur.com/ZKrqmYE.png);
+				&:hover {
+					content: url(https://i.imgur.com/d5w1Dtz.png);
+				}
+			}
+
+			.tragop {
+				content: url(https://i.imgur.com/6DjY9JC.png);
+				&:hover {
+					content: url(https://i.imgur.com/eet1XS0.png);
+				}
+			}
+
+			.khuyenmai {
+				content: url(https://i.imgur.com/KkV1HJw.png);
+				&:hover {
+					content: url(https://i.imgur.com/vnrGVsh.png);
+				}
+			}
+		}
+
+		.dropdownContent {
+			display: none;
+			position: absolute;
+			background-color: #fff;
+
+			min-width: 160px;
+
+			padding: 10px 20px;
+			border: 1px solid $color-black;
+			border-top-width: 0;
+			border-bottom-left-radius: 2px;
+			border-bottom-right-radius: 2px;
+
+			z-index: 1;
+
+			&:hover {
+				display: block;
+			}
+
+			ul {
+				white-space: nowrap;
+				font-size: 14px;
+				font-weight: bold;
+				color: $color-grey;
+				cursor: pointer;
+				padding: 2px;
+				margin: 0px;
+				display: block;
+				&:hover {
+					color: $color-black;
+				}
+			}
+
+			li {
+				padding: 5px;
+				margin-left: 20px;
+				font-weight: normal;
+				list-style-type: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+$backgroundColor: #fdd600;
+
+.header {
+	font-family: Roboto, sans-serif;
+	border: none;
+	width: 100%;
+	background-color: $backgroundColor;
+
+	.headerContainer {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 20px;
+
+		.logo {
+			width: 250px;
+			height: auto;
+			margin-right: 10px;
+		}
+	}
+
+	.headerSearch {
+		background: white;
+		display: flex;
+		width: 40%;
+		margin-left: 10px;
+		margin-right: 10px;
+
+		padding: 0 5px;
+		border-radius: 4px;
+
+		.searchButton {
+			font-size: 16px;
+			border: none;
+			cursor: pointer;
+			border: none;
+		}
+
+		.inputField {
+			width: 100%;
+			float: right;
+			padding: 6px;
+			border: none;
+			font-size: 16px;
+		}
+	}
+
+	.headerHotline {
+		margin: 0 10px;
+		background-color: #9d060e;
+		width: auto;
+		border-radius: 4px;
+		padding: 10px;
+
+		font-size: 16px;
+		color: #fff;
+	}
+
+	.headerCart {
+		margin: 0 10px;
+		background-color: $backgroundColor;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.cart {
+			text-align: center;
+		}
+
+		.cartButton {
+			font-size: 25px;
+			float: left;
+			background-color: $backgroundColor;
+			cursor: pointer;
+			border: none;
+		}
+	}
+}
