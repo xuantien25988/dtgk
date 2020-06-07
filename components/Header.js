@@ -1,6 +1,7 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faShoppingBag } from '@fortawesome/free-solid-svg-icons';
 import style from './scss/Header.module.scss';
+
+import { FaSearch } from 'react-icons/fa';
+import { GrCart } from 'react-icons/gr';
 
 export default () => (
 	<div className={style.header}>
@@ -13,9 +14,9 @@ export default () => (
 			</a>
 
 			<form className={style.header_search}>
-				<button className={style.button_search}>
-					<FontAwesomeIcon icon={faSearch} />
-				</button>
+				<div>
+					<FaSearch className={style.button_search} />
+				</div>
 				<input
 					className={style.input_field}
 					type="text"
@@ -26,9 +27,7 @@ export default () => (
 
 			<div className={style.header_hotline}>HOTLINE 1900-8922</div>
 			<div className={style.header_cart}>
-				<button className={style.button_cart}>
-					<FontAwesomeIcon icon={faShoppingBag} />
-				</button>
+				<GrCart />
 				<div className={style.cart}>GIỎ HÀNG</div>
 			</div>
 		</div>
