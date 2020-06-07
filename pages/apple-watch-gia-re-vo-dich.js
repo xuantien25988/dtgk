@@ -7,6 +7,7 @@ class Index extends React.Component {
 		super();
 		this.state = { products: [] };
 	}
+
 	async componentDidMount() {
 		const respone = await FetchData.get('/layouts/apple-watch-gia-re-vo-dich');
 		this.setState({ products: respone });

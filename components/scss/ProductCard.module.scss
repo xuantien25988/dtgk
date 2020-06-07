@@ -9,8 +9,13 @@ $pearl: #faebea;
 $gradient-background: linear-gradient(180deg, #f7b500, #fa6400);
 
 .wrapper {
+	background-color: $white;
 	padding: 10px 5px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+
 	.container {
+		width: 100%;
 		.sale_tag {
 			display: flex;
 			color: $white;
@@ -80,27 +85,37 @@ $gradient-background: linear-gradient(180deg, #f7b500, #fa6400);
 				}
 			}
 		}
-		.button_datmua {
+		.datmua_container {
 			.alert {
-				font-size: 10px;
+				padding: 5px;
+				margin-bottom: 5px;
 				margin-top: 5px;
+
+				font-size: 10px;
 				font-weight: 400;
 				font-stretch: normal;
 				font-style: normal;
-				line-height: normal;
 				letter-spacing: -.25px;
-				color: $orange;
+				line-height: normal;
+
 				border-radius: 4px;
+
+				color: $orange;
 				background-color: $pearl;
-				padding: 5px;
-				margin-bottom: 5px;
 			}
-			Button {
-				border-radius: 5px;
-				font-weight: 400;
+			.button_datmua {
+				width: 100%;
+
+				border: 1px solid $red;
+				border-radius: 7px;
+				box-sizing: border-box;
+
+				line-height: 36px;
+				text-align: center;
+				font-size: 12px;
+				font-weight: 700;
 				color: $white;
 				background-color: $orange;
-				width: 100%;
 			}
 		}
 		.view_count {

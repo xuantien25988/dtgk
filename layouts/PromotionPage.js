@@ -4,36 +4,32 @@ import Footer from '../components/Footer';
 
 import Sale from '../components/Sale.js';
 
-import FetchData from '../api/dienthoaigiakhoAPI';
+import { GetCategories, GetLayouts, GetFooter } from '../repositories/GetDataFromAPI';
 
 class PromotionPage extends React.Component {
 	constructor() {
 		super();
 		this.state = { categories: [], layouts: [], metadata: [], footer: [] };
-		this.getCategories();
-		this.getSaleProducts();
-		this.getMetaData();
-		this.getFooter();
 	}
 
-	async getCategories() {
-		const respone = await FetchData.get('/categories');
-		this.setState({ categories: respone.data.rows });
+	componentWillMount() {
+		this.getInitialData();
 	}
 
-	async getSaleProducts() {
-		const respone = await FetchData.get('/layouts/apple-watch-gia-re-vo-dich');
-		this.setState({ layouts: respone.data.data.layout });
+	async getInitialData() {
+		const [ categories, layout, footer ] = await Promise.all([
+			GetCategories(),
+			GetLayouts(),
+			GetFooter()
+		]);
+		this.setState({
+			categories : categories.data.rows,
+			layouts    : layout.data.data.layout,
+			metadata   : layout.data.metadata,
+			footer     : footer.data.articles
+		});
 	}
 
-	async getMetaData() {
-		const respone = await FetchData.get('/layouts/apple-watch-gia-re-vo-dich');
-		this.setState({ metadata: respone.data.metadata });
-	}
-	async getFooter() {
-		const respone = await FetchData.get('/home/footer');
-		this.setState({ footer: respone.data.articles });
-	}
 	render() {
 		return (
 			<div>

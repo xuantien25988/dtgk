@@ -1,0 +1,8 @@
+.list_container {
+	.grid_container {
+		justify-items: center;
+		display: grid;
+		gap: 8px;
+		grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+	}
+}
