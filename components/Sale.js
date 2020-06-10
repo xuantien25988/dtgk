@@ -3,7 +3,7 @@ import style from './scss/Sale.module.scss';
 import Countdown from 'react-countdown-now';
 import ProductList from './ProductList';
 
-const Sale = ({ layouts, metadata }) => {
+const Sale = ({ layout, metadata }) => {
 	const renderedCountdown = ({ hours, minutes, seconds, completed }) => {
 		return (
 			<div className={style.flexBlock}>
@@ -24,7 +24,7 @@ const Sale = ({ layouts, metadata }) => {
 		);
 	};
 
-	const renderedProductList = layouts.map((layout) => {
+	const renderedProductList = layout.map((layout) => {
 		if (layout._products.length !== 0) {
 			return (
 				<div>

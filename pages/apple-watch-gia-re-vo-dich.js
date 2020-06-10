@@ -1,25 +1,25 @@
-import PromotionPage from '../layouts/PromotionPage.js';
-import FetchData from '../api/dienthoaigiakhoAPI';
-import React from 'react';
+import Sale from '../components/Sale.js';
 
-class Index extends React.Component {
-	constructor() {
-		super();
-		this.state = { products: [] };
-	}
+import { GetLayouts } from '../repositories/GetDataFromAPI';
 
-	async componentDidMount() {
-		const respone = await FetchData.get('/layouts/apple-watch-gia-re-vo-dich');
-		this.setState({ products: respone });
-	}
+function Index({ layouts, metadata }) {
+	return (
+		<div>
+			<Sale layout={layouts} metadata={metadata} />
+		</div>
+	);
+}
 
-	render() {
-		return (
-			<div>
-				<PromotionPage />
-			</div>
-		);
-	}
+export async function getServerSideProps() {
+	// Fetch data from external API
+
+	const layoutsData = await GetLayouts('apple-watch-gia-re-vo-dich');
+
+	const layouts = layoutsData.data.data.layout;
+	const metadata = layoutsData.data.metadata;
+
+	// Pass data to the page via props
+	return { props: { layouts, metadata } };
 }
 
 export default Index;
